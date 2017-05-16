@@ -1,0 +1,118 @@
+.register {
+    background-image: url('../image/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    form {
+        .mt(50);    
+        .form-line {
+             margin-left: auto;
+             margin-right: auto;
+            .w(300);
+            .h(40);
+            box-sizing: border-box;
+            background-color: @formBgColor;
+            &:first-child {
+                border-bottom: 1px solid @defaultColor;
+            };
+            input {   
+                .w(200);
+                .lh(40);
+                .pl(20);
+                background-color: @inputBgColor;        
+                color: @defaultColor;
+                &::-webkit-input-placeholder {
+                        color: @defaultColor;
+                };
+                &:first-child {
+                    border-bottom: 1px solid @defaultColor;
+                };
+                &.ng-invalid {
+                    &+span {
+                        position: absolute;
+                        top: 0px;
+                        right: 20px;
+                        color: @dangerColor;
+                        .fs(14);
+                        .lh(40);
+                    }
+                }
+            }
+            .account, .lock {
+                .w(40);
+                .h(40);
+                background-repeat: no-repeat;
+                background-color: @iconBgColor;
+                background-position: 10px 10px;
+            };
+            .account {               
+                background-image: url('../image/account.png');                
+            }
+            .lock {
+                background-image: url('../image/lock.png')
+            }
+
+        }; 
+        .message-wrap {
+            position: relative;
+            .mt(50);
+             margin-left: auto;
+             margin-right: auto;
+            .w(300);
+            .h(40);
+            .message-box {
+                .lh(40);
+                .pl(20);
+                background-color: @formBgColor;        
+                color: @defaultColor;
+                &::-webkit-input-placeholder {
+                        color: @defaultColor;
+                }; 
+            };
+            .message {
+                margin-top: 8px;
+                border: 1px solid @headBgColor;
+                padding: 5px;
+                color:@headBgColor;
+                .fs(12);
+                &.disabled {
+                    color: @lineColor;
+                    border: 1px solid @lineColor;
+                }
+            }
+            input {                
+                &.ng-invalid {
+                    &+span {
+                        position: absolute;
+                        top: 36px;
+                        left: 20px;
+                        color: @dangerColor;
+                        .fs(14);
+                        .lh(40);
+                    }
+                }
+            }
+        }       
+        button {
+            .w(300);
+            .h(35);
+            .fs(18);
+            font-weight: 700;
+            &.login-btn {
+                margin-top: 75px;
+                background-color: @headBgColor;
+                color: @defaultColor;
+            };
+            &.register-btn {
+                margin-top: 20px;
+                background-color: @btnBgColor;
+                color: @defaultColor;
+            }
+        }
+        
+    }
+}

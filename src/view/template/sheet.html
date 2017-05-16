@@ -1,0 +1,8 @@
+<div class="sheet" ng-show="sheetVisible" ng-click="cancel()" >
+    <div class="wrap">
+        <ul>
+            <li class="d-b ta-c" ng-repeat="item in sheetList" ng-click="selectItem(item)">{{item.name}}</li>
+        </ul>
+        <button class="d-b" ng-click="cancel()">取消</button>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="position-class bg-w">
+    <h5>职位列表</h5>
+    <button ng-class="{'active':isActiveNum==$index}"  ng-click="showPosition($index)" ng-repeat="cls in com.positionClass">{{cls.name}}</button>
+    <ul ng-repeat="item in positionItem">
+        <li class="p-r">
+            <p>{{item.name}}</p>
+            <p>{{item.createdDate}}</p>
+            <span class="p-a c-r">{{item.salary}}</span>
+        </li>
+    </ul>
+</div>

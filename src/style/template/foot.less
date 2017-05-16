@@ -1,0 +1,43 @@
+@import '../variable.less';
+
+.foot {
+    .h(40);
+    .lh(40);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 0;
+    border-top: 1px solid @lineColor;
+    li {
+        width: 33.3%;
+        .fs(16);
+        color: @menuColor;
+        i {
+            .mr(2);
+        }
+        &.select {
+            color: @highlightColor;
+            background: @highlightBgColor;
+        }
+             
+    }
+    .icon-document {
+        background-image: url('../image/document.png');
+        width: 25px;
+        height: 21px;
+        vertical-align: text-bottom;
+    }
+    .icon-search {
+        background-image: url('../image/search.png');
+        width: 24px;
+        height: 24px;
+        vertical-align: text-bottom;
+    }
+    .icon-my {
+        background-image: url('../image/my.png');
+        width: 23px;
+        height: 25px;
+        vertical-align: text-bottom;
+    }      
+}

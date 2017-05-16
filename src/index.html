@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>首页</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body ng-app="app">
+<div ui-view></div>
+
+
+<script>
+    var html = document.querySelector('html');
+    html.style.fontSize = window.screen.width/10 + "px";
+</script>
+<script src="vendor/angular/angular.min.js"></script>
+<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="vendor/angular-cookies/angular-cookies.min.js"></script>
+<script src="vendor/angular-validation/dist/angular-validation.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
